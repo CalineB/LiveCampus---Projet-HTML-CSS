@@ -1,0 +1,32 @@
+body, main, html, footer {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF5E9;
+}
+
+body {
+    height: 100vh;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: bold; */
+    font-style: normal;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+}

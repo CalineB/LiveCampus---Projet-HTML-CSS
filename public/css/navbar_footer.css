@@ -1,0 +1,130 @@
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #323232;
+    color: #ffcc00;
+    position: relative;
+    font-weight: bold;
+}
+
+/* Icône du menu burger */
+.burger_menu {
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    margin-left: 70%;
+}
+
+/* Styles du menu (mobile par défaut - caché) */
+.navbar {
+    display: none;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    color: #323232;
+    cursor: pointer;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 7px 0;
+}
+
+a.navigation{
+    color: 323232;
+}
+
+a.navigation:visited,
+a.navigation:active {
+    color: #323232;
+}
+
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    background-color: #323232;
+    list-style: none;
+    z-index: 1;
+}
+
+
+.navigation {
+    border-radius: 20px;
+    border: 2px solid #ffcc00;
+    background-color: #FAF5E9;
+    padding: 15px;
+}
+
+ul.navbar.active {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .burger_menu {
+        display: none;
+    }
+
+    ul.navbar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar li {
+        padding: 10px 20px;
+        width: auto;
+    }
+
+    /* Icône du menu burger */
+    i.burger_menu {
+        display: none;
+    }
+
+    a.navigation {
+    display: flex;
+    align-items: center;
+}
+}
+
+
+/* Pied de page */
+
+footer {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+    color: #FAF5E9;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

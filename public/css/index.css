@@ -1,0 +1,17 @@
+body {
+    background-color: #faf5e9;
+}
+
+.bandeau {
+    width: 100vw;
+    max-height: 60vh;
+    margin: 3vh auto;
+    object-fit: cover;
+}
+
+.presentation {
+    font-weight: normal;
+    margin: 1.5em;
+    padding: 1em;
+    text-align: justify
+}
