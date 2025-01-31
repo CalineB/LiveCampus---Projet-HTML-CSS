@@ -21,7 +21,7 @@ nav {
     font-size: 2rem;
     cursor: pointer;
     display: block;
-    margin-left: 70%;
+    margin: 0 auto;
 }
 
 /* Styles du menu (mobile par défaut - caché) */
@@ -72,9 +72,13 @@ a.navigation:active {
 }
 
 ul.navbar.active {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
     padding: 0;
     display: flex;
+    z-index: 10;
 }
 
 @media screen and (min-width: 768px) {

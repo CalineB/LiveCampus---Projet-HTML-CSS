@@ -1,0 +1,52 @@
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #faf5e9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #009b4d;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.timeline li {
+    width: fit-content;
+    background-color: #ddd0c8;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #ffcc00;
+    border-radius: 5px;
+}
+
+
+.timeline li:hover {
+    border-left: 4px solid #009b4d;
+    color: #faf5e9;
+    background-color: #323232;
+    padding: 12px;
+
+}
+
+.advantages {
+    list-style: none;
+    padding: 0;
+}
+
+.advantages li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}

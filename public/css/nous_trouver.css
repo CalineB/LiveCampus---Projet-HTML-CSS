@@ -5,10 +5,11 @@
     }
 
     .maps {
+        width: 100%;
+        height: auto;
         border-radius: 10px;
-        margin: 1em;
         border: 2px solid #323232;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .contact {
@@ -17,18 +18,34 @@
         align-items: center;
     }
 
+    .address {
+        display: flex;
+        justify-content: center;
+        background-color: #323232;
+        color: #faf5e9;
+        margin-top: 2rem;
+    }
 
-    .addresse li {
+    .address.title {
+        font-family: "Lavishly Yours", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 40px;
+    }
+
+    .address .add_info  {
+        justify-content: center;
+        align-items: center;
         padding: 1em;
         font-family: "lavishly Yours", sans-serif;
         font-weight: 400;
         font-style: normal;
     }
 
-    .addresse {
-        display: flex;
-        justify-content: center;
-        background-color: #323232;
-        color: #faf5e9;
-        margin-top: 2rem;
+  
+
+    /* Responsive img */
+
+    .map_image {
+        padding: 20px;
     }
