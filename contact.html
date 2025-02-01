@@ -49,18 +49,22 @@
     <form class="contact-form">
         <h2>Ecrivez-nous !</h2>
         <div class="formulaire">
-            <input type="text" id="nom" name="nom" placeholder="Nom et Prénom" required>
+            <label for="name">Nom et Prénom</label>
+            <input type="text" id="nom" name="nom" placeholder="BON Jean" required>
         </div>
 
         <div class="formulaire">
+            <label for="email">Courriel</label>
             <input type="text" id="mail" name="mail" placeholder="votremail@email.com" required>
         </div>
 
         <div class="formulaire">
-            <input type="text" id="telephone" name="telephone" placeholder="n°">
+            <label for="tel">Téléphone</label>
+            <input type="text" id="telephone" name="telephone" placeholder="07 07 07 07 07">
         </div>
 
         <div class="formulaire">
+            <label for="message">Votre message</label>
             <textarea id="message" name="message" placeholder="Votre message" required></textarea>
         </div>
 

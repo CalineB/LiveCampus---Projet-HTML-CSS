@@ -1,5 +1,4 @@
 body {
-    background-color: var(--main-color);
     text-align: center;
 }
 
@@ -74,6 +73,16 @@ aside li {
     border: 0.2vw solid black-color;
     font-size: 1.2em;
 }
+
+.formulaire label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--black-color);
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
 
 @media (max-width: 768px) {
     .contact-form {
