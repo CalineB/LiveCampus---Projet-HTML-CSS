@@ -118,7 +118,6 @@ li.product.all {
     flex-direction: column-reverse;
 }
 
-
 /* grands écrans */
 @media (min-width: 768px) {
     .dropdown {
@@ -131,6 +130,7 @@ li.product.all {
         justify-content: center;
         position: relative;
         width: 100%;
+        height: 65px;
         margin-top: 1rem;
     }
 
@@ -141,6 +141,7 @@ li.product.all {
     ul.categories li {
         display: block;
         text-align: center;
+
     }
 
     ul.products {
@@ -156,6 +157,12 @@ li.product.all {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+
+    .dot {
+        display: flex;
+        align-content: center;
     }
 
 }
