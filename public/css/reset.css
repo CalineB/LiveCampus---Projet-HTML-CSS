@@ -1,18 +1,41 @@
+
+/* On définit des variables CSS pour nos couleurs de façon à
+les utiliser avec var(). */
+:root {
+    --green-color: #009B4D;
+    --main-color: #FAF5E9;
+    --cream-color : #DDD0C8;
+    --black-color: #323232;
+    --yellow-color: #FFCC00;
+}
+
+/* On retire les margins et padding à la page et
+on définit la couleur de fond. */
 body, main, html, footer {
     margin: 0;
     padding: 0;
     background-color: #FAF5E9;
 }
 
+/* Le body prend toute la hauteur de la page. */
 body {
     height: 100vh;
 }
 
+/* On définit la police exporté depuis Google fonts 
+pour tous les textes */
 * {
     font-family: "Montserrat", sans-serif;
     /* font-weight: bold; */
     font-style: normal;
     font-size: 16px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
 }
 
 a {
@@ -24,9 +47,3 @@ ul, li {
     margin: 0;
 }
 
-h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 24px;
-}

@@ -1,3 +1,4 @@
+/* Mobile first */
 
 header {
     display: flex;
@@ -10,8 +11,8 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 15px 20px;
-    background-color: #323232;
-    color: #ffcc00;
+    background-color: var(--black-color);
+    color: var(--yellow-color);
     position: relative;
     font-weight: bold;
 }
@@ -34,7 +35,7 @@ nav {
     padding: 0;
     width: 80%;
     text-align: center;
-    color: #323232;
+    color: var(--black-color);
     cursor: pointer;
     border-radius: 20px;
     align-items: center;
@@ -43,13 +44,30 @@ nav {
     margin: 7px 0;
 }
 
-a.navigation{
-    color: 323232;
+.navigation {
+    border-radius: 20px;
+    border: 2px solid var(--yellow-color);
+    background-color: var(--main-color);
+    padding: 15px;
+    transition: color 0.5s ease-in-out;
+}
+
+.navigation:hover {
+    background-color: var(--black-color);
+    border: solid 2px var(--green-color);
+}
+
+a.navigation {
+    transition: color 0.3s ease-in-out;
 }
 
 a.navigation:visited,
 a.navigation:active {
-    color: #323232;
+    color: var(--black-color);
+}
+
+a.navigation:hover {
+    color: var(--main-color);
 }
 
 .navbar.active {
@@ -58,18 +76,11 @@ a.navigation:active {
     align-items: center;
     position: absolute;
     width: 80%;
-    background-color: #323232;
+    background-color: var(--black-color);
     list-style: none;
     z-index: 1;
 }
 
-
-.navigation {
-    border-radius: 20px;
-    border: 2px solid #ffcc00;
-    background-color: #FAF5E9;
-    padding: 15px;
-}
 
 ul.navbar.active {
     top: 100%;
@@ -126,8 +137,8 @@ footer {
     bottom: 0;
     margin: 0;
     padding: 0;
-    background-color: #323232;
-    color: #FAF5E9;
+    background-color: var(--black-color);
+    color: var(--main-color);
     width: 100%;
     display: flex;
     justify-content: space-evenly;
