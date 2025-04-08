@@ -84,6 +84,10 @@ ul.products {
     padding: 0;
 }
 
+ul.products li {
+    margin: 2rem auto;
+}
+
 h2.prod_name {
     text-align: center;
     display: flex;
@@ -91,7 +95,7 @@ h2.prod_name {
     justify-content: center;
     white-space: break-word;
     font-size: 12px;
-    min-height: 3rem;
+    min-height: 1rem;
 }
 
 h2 {
@@ -122,6 +126,24 @@ li.product.all {
     display: flex;
     flex-direction: column-reverse;
 }
+
+
+.order-banner {
+    background-color: #e63946;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Assure que chaque produit est positionné relativement */
+.product {
+    position: relative;
+}
+
 
 /* grands écrans */
 @media (min-width: 768px) {
