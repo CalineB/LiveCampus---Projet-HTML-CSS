@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Grenier</title>
+    <title>Mélange d'épices - Contact</title>
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/products.css">
     <link rel="stylesheet" href="public/css/navbar_footer.css">
@@ -19,16 +19,16 @@
 
 <body>
     <header>
-        <img src="public/images/Group_7.png" alt="logo - Le Grenier" class="logo">
+        <a href="index.html">
+            <img src="public/images/logoME.png" alt="logo - Mélange d'épices" class="logo">
+        </a>
     </header>
 
     <nav>
         <i class='burger_menu bx bx-menu-alt-right' style='color:#ffcc00'></i>
         <ul class="navbar">
             <li class="nav_btn"><a href="index.html" class="navigation">Accueil</a></li>
-            <li class="nav_btn"><a href="qui_sommes_nous.html" class="navigation">Qui sommes-nous ?</a></li>
             <li class="nav_btn"><a href="products.html" class="navigation">Nos produits</a></li>
-            <li class="nav_btn"><a href="nous_trouver.html" class="navigation">Nous trouver</a></li>
             <li class="nav_btn"><a href="contact.html" class="navigation">Contact</a></li>
         </ul>
     </nav>
@@ -37,12 +37,22 @@
     <div class="contact">
     <aside>
         <ul class="side-menu">
-            <li class="address_info title">Le Grenier</li>
-            <li class="address_info">25 rue des Champs de Mars</li>
-            <li class="address_info">67003 Albé - Alsace</li>
-            <li class="address_info">03 03 03 03 03</li>
-            <li class="address_info">legrenier@gmail.com</li>
-            <li class="address_info">Du lundi au vendredi <br> 8h00 - 19h00</li>
+            <li class="address_info title">Mélange d'épices</li>
+            <li class="address_info">
+                51 Rue de Lyon
+                <br>
+                89200 AVALLON
+            </li>
+            <li class="address_info">
+                Du mardi au vendredi <br> 9h00 - 12h00 <br> 15h00 - 19h00
+                <br> <br>
+                Les samedis <br> 8h30 - 12h30 <br> 15h00 - 20h00
+            </li>
+            <li class="address_info">
+                03 03 03 03 03
+                <br>
+                an-entreprise@orange.fr
+            </li>
         </ul>
     </aside>
 
@@ -55,7 +65,7 @@
 
         <div class="formulaire">
             <label for="email">Courriel</label>
-            <input type="text" id="mail" name="mail" placeholder="votremail@email.com" required>
+            <input type="email" id="mail" name="mail" placeholder="votremail@email.com" required>
         </div>
 
         <div class="formulaire">
@@ -77,10 +87,11 @@
 
 
 <footer>
-    <p class="footer_text">@2025 DevTeam</p>
-    <p class="footer_text">Mentions légales</p>
-    <p class="footer_text">Contact</p>
+    <a href="contact.html"><p class="footer_text">Contact</p></a>
+    <a href="legal_info.html"><p class="footer_text">Mentions légales</p></a>
+    <a href="https://calineb.netlify.app/" target="_blank"><p class="footer_text">Par CBO@2025</p></a>
 </footer>
+
 
 <script src="/scripts/dropdown.js"></script>
 <script src="/scripts/navbar.js"></script>

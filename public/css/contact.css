@@ -25,7 +25,9 @@ aside li {
     font-family: "Lavishly Yours", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 40px;
+    font-size: 3rem;
+    color: var(--green-color);
+    line-height: 35px;
 }
 
 .contact-form {
@@ -35,6 +37,7 @@ aside li {
     border: 0.2vw solid var(--black-color);
     width: 50%;
     margin: 5vh auto;
+    margin-right: 2rem;
     text-align: center;
 }
 
@@ -70,7 +73,7 @@ aside li {
     color: var(--main-color);
     padding: 1em;
     border-radius: 2vw;
-    border: 0.2vw solid black-color;
+    border: 0.2vw solid var(--black-color);
     font-size: 1.2em;
 }
 

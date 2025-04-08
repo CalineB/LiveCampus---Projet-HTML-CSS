@@ -20,6 +20,10 @@ section {
     margin: 2rem auto;
 }
 
+.dot {
+    pointer-events: none;
+}
+
 .bxs-down-arrow {
     z-index: 1;
 }
@@ -42,6 +46,7 @@ ul.categories {
     z-index: 10;
     padding: 0;
     margin: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 li.prod_cat {
@@ -84,7 +89,7 @@ h2.prod_name {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    white-space: wrap;
+    white-space: break-word;
     font-size: 12px;
     min-height: 3rem;
 }
@@ -165,4 +170,11 @@ li.product.all {
         align-content: center;
     }
 
+}
+
+@media (min-width: 560px) and (max-width: 767px) {
+    ul.products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

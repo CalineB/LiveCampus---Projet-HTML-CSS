@@ -1,5 +1,12 @@
 /* Mobile first */
 
+.logo {
+    height: 7rem;
+    width: 9rem;
+    border-radius: 20% 50% 20% 50%;
+    margin: .5rem auto;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -148,3 +155,19 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
+
+
+.footer_text {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.footer_text:visited {
+    color: whitesmoke;
+}
+
+.footer_text:hover {
+    color: var(--yellow-color);
+    font-size: 1.1rem;
+}
+

@@ -1,13 +1,45 @@
 .bandeau {
     width: 100vw;
-    max-height: 60vh;
-    margin: 3vh auto;
+    max-height: 20vh;
     object-fit: cover;
 }
 
 .presentation {
     font-weight: normal;
-    margin: 1.5em;
+    margin: 0 1.5em;
     padding: 1em;
     text-align: justify
+}
+
+div.presentation p {
+    margin-top: 0;
+}
+
+
+.opening_hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+}
+
+.prod_link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.see_prod {
+    background-color: #FFCC00;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.see_prod:hover {
+    background-color: #009B4D;
+    color: whitesmoke;
+    font-size: 1.5rem;
 }
