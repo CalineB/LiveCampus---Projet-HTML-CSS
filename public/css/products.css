@@ -20,8 +20,26 @@ section {
     margin: 2rem auto;
 }
 
+.dropdown-text {
+    flex: 1;
+    color: var(--yellow-color);
+}
+
+.dropdown i {
+    transition: transform 0.3s ease;
+}
+
+/* Quand le menu est ouvert */
+.dropdown.open i {
+    transform: rotate(180deg); /* flèche vers le haut */
+}
+
 .dot {
     pointer-events: none;
+}
+
+li.prod_cat.all.selected {
+    margin: 0;
 }
 
 .bxs-down-arrow {
@@ -186,11 +204,11 @@ li.product.all {
         align-items: center;
     }
 
-
     .dot {
         display: flex;
         align-content: center;
     }
+
 
 }
 

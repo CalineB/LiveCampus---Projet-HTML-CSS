@@ -1,42 +1,39 @@
 // On récupère les éléments ciblés dans des variables.
 const dropdown = document.querySelector(".dropdown");
+const dropdownText = dropdown.querySelector(".dropdown-text");
 const categories = document.querySelector(".categories");
 const categoryItems = document.querySelectorAll(".categories li");
 const products = document.querySelectorAll(".product");
 
-// On cherche tous les éléments de notre liste déroulante.
+// On cherche l'élément sélectionné dans la liste au chargement
 const selectedItem = document.querySelector(".categories .selected");
-if (selectedItem) {
-    dropdown.textContent = selectedItem.textContent;
+if (selectedItem && dropdownText) {
+    dropdownText.textContent = selectedItem.textContent;
 }
 
-// Au clic sur la div qui regoupe la liste du menu
-// la classe active s'ajoute.
+// Au clic sur la div qui regroupe la liste du menu
+// la classe active s'ajoute et la flèche tourne
 dropdown.addEventListener("click", function () {
     categories.classList.toggle("active");
+    dropdown.classList.toggle("open"); // la flèche tourne ici
 });
 
-// Pour chaque éléments de la classe categorie, 
-// on ajoute un écouteur d'évènement afin qu'au clic
-//  d'un d'entre eux la classe active se retire et le menu se ferme.
+// Lorsqu'un élément de la catégorie est sélectionné, on met à jour le texte du dropdown et on filtre les produits
 categoryItems.forEach(item => {
     item.addEventListener("click", function () {
-        dropdown.textContent = this.textContent;
+        // Mettre à jour le texte dans le dropdown
+        if (dropdownText) {
+            dropdownText.textContent = this.textContent;
+        }
+
+        // Fermeture du menu et remise à zéro de la flèche
         categories.classList.remove("active");
-    });
-});
+        dropdown.classList.remove("open");
 
-// Pour chaque élément du menu déroulant
-categoryItems.forEach(item => {
-    item.addEventListener("click", function () {
-        // On récupère la 2em class
-        // afin de le lier à la class correspondante aux produits
+        // Récupérer la catégorie sélectionnée
         const selectedCategory = this.classList[1];
-        dropdown.textContent = this.textContent;
 
-        // Pour chaque produit, on vérifie s'il appartient à une class spécifique ou la class commune à tous (all)
-        // Et on affiche les produits ayant la class sélectionné dans le menu
-        // Ou on n'affiche rien si on n'a pas de produits correspondant à l'élément dans le menu déroulant
+        // Filtrer les produits en fonction de la catégorie sélectionnée
         products.forEach(product => {
             if (product.classList.contains(selectedCategory) || selectedCategory === "all") {
                 product.style.display = "list-item";
@@ -44,14 +41,17 @@ categoryItems.forEach(item => {
                 product.style.display = "none";
             }
         });
+
+        // Ajouter la classe "selected" à la catégorie cliquée
+        categoryItems.forEach(item => item.classList.remove("selected"));
+        this.classList.add("selected");
     });
 });
 
-// Si on clic en dehors du menu déroulant ou pas sur un de ses éléments "li"
-// lorsqu'il est ouvert, il se referme et 
-// on ne change rien aux produits affichés.
+// Si on clique en dehors du menu déroulant, il se referme sans modifier les produits affichés.
 document.addEventListener("click", function (event) {
     if (!dropdown.contains(event.target) && !categories.contains(event.target)) {
         categories.classList.remove("active");
+        dropdown.classList.remove("open");
     }
 });
