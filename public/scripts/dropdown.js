@@ -36,7 +36,7 @@ categoryItems.forEach(item => {
         // Filtrer les produits en fonction de la catégorie sélectionnée
         products.forEach(product => {
             if (product.classList.contains(selectedCategory) || selectedCategory === "all") {
-                product.style.display = "list-item";
+                product.style.display = "flex";
             } else {
                 product.style.display = "none";
             }

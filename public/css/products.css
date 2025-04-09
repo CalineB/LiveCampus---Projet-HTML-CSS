@@ -38,9 +38,6 @@ section {
     pointer-events: none;
 }
 
-li.prod_cat.all.selected {
-    margin: 0;
-}
 
 .bxs-down-arrow {
     z-index: 1;
@@ -65,6 +62,10 @@ ul.categories {
     padding: 0;
     margin: 0;
     transition: all 0.3s ease-in-out;
+}
+
+li.prod_cat.all {
+    margin: 0;
 }
 
 li.prod_cat {
@@ -111,9 +112,8 @@ h2.prod_name {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    white-space: break-word;
     font-size: 12px;
-    min-height: 1rem;
+    min-height: 2.5rem;
 }
 
 h2 {
@@ -141,10 +141,12 @@ h2 {
 
 
 li.product.all {
-    display: flex;
     flex-direction: column-reverse;
 }
 
+li.product.seeds.all.fade-in-up {
+    display: flex;
+}
 
 .order-banner {
     background-color: #e63946;
@@ -186,8 +188,9 @@ li.product.all {
     ul.categories li {
         display: block;
         text-align: center;
-
     }
+
+    
 
     ul.products {
         grid-template-columns: repeat(4, 1fr);
