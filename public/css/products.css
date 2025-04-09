@@ -50,10 +50,8 @@ section {
 ul.categories {
     list-style: none;
     background: var(--black-color);
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin: 0 auto;
     border: 1px solid var(--main-color);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -114,6 +112,7 @@ h2.prod_name {
     justify-content: center;
     font-size: 12px;
     min-height: 2.5rem;
+    max-width: 10rem;
 }
 
 h2 {
@@ -144,9 +143,7 @@ li.product.all {
     flex-direction: column-reverse;
 }
 
-li.product.seeds.all.fade-in-up {
-    display: flex;
-}
+
 
 .order-banner {
     background-color: #e63946;
@@ -190,14 +187,8 @@ li.product.seeds.all.fade-in-up {
         text-align: center;
     }
 
-    
-
     ul.products {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    h2.prod_name {
-        font-size: 24px;
     }
 
     li.product.all {
