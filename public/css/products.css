@@ -247,6 +247,33 @@ li.product.all {
     }
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.search-container input:focus {
+    border-color: var(--yellow-color);
+    outline: none;
+}
+
+.search-container i {
+    font-size: 1.5rem;
+    color: var(--green-color);
+}
+
+
 @media (min-width: 560px) and (max-width: 767px) {
     ul.products {
         display: grid;
