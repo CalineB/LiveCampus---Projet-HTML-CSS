@@ -86,6 +86,14 @@ aside li {
     text-align: left;
 }
 
+a.phone_contact {
+    color: var(--cream-color);
+}
+
+a.phone_contact:hover {
+    text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
     .contact-form {
